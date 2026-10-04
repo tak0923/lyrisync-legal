@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy | LyriSync</title>
+<meta name="description" content="LyriSync Privacy Policy">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="40" height="40">LyriSync</a>
+    <nav class="lang"><a href="../ja/privacy.html">日本語</a></nav>
+  </header>
+  <main>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: October 4, 2026 · Operator: Takumi Kimura (individual developer)</p>
+
+<p>LyriSync (the "App") treats your information with care. This policy explains what information the App handles, why, and where. The App has no account registration and does not collect your name, email address, or phone number. It does not use advertising or analytics tools.</p>
+
+<h2>1. Information we handle</h2>
+<table>
+<tr><th>Information</th><th>Purpose</th><th>How it is handled</th></tr>
+<tr><td>Information about the song playing in Apple Music (title, artist, ISRC, playback position, duration) and songs you search for</td><td>To identify the song and show lyrics in sync with playback</td><td>Handled on your device. The title, artist, ISRC, and duration needed to fetch lyrics are sent to the lyrics server (see section 2).</td></tr>
+<tr><td>Microphone audio (only when you use "Listen")</td><td>To identify a song playing nearby</td><td>The App does not save the recording and does not send it to the operator's servers. Song identification uses Apple's ShazamKit; an audio signature derived from the sound is sent to Apple (see section 3).</td></tr>
+<tr><td>Speech recognition results (lyric text)</td><td>To find songs such as covers from their lyrics</td><td>Speech recognition runs only on your device; audio never leaves it. Recognized words are used as search terms in the Apple Music catalog (MusicKit), which sends them to Apple.</td></tr>
+<tr><td>Anonymous per-device ID (a randomly generated UUID)</td><td>To prevent excessive requests to the lyrics server</td><td>Created on your device for each installation. It is not linked to your name or Apple ID. It is removed when you delete the App.</td></tr>
+<tr><td>Settings, favorites, reading corrections, usage counts, sync adjustments, record of consent</td><td>To provide the App's features</td><td>Stored only on your device. Not sent to the operator.</td></tr>
+<tr><td>Purchase and subscription information</td><td>To provide Premium features</td><td>Processed by Apple's App Store (StoreKit). The App does not receive your payment card details.</td></tr>
+</table>
+
+<h2>2. Lyrics server and lyrics provider</h2>
+<p>The App fetches synchronized lyrics from a lyrics server managed by the operator (running on services of Cloudflare, Inc.). The lyrics server obtains lyrics from a lyrics provider licensed by the rights holders.</p>
+<ul>
+  <li>Information sent to the lyrics server: song title, artist, ISRC, duration, the anonymous per-device ID, and the IP address that accompanies any network request.</li>
+  <li>The lyrics server uses the anonymous ID only to limit the number of requests. It sends the song title, artist, ISRC, and duration to the lyrics provider, and does not send the anonymous ID.</li>
+  <li>If the agreement with the lyrics provider requires it, the App may load the provider's tracking URL when lyrics are displayed. By the nature of network communication, your IP address then reaches the provider.</li>
+  <li>To protect the rights of rights holders and providers, lyrics text is not kept on your device for long periods.</li>
+</ul>
+
+<h2>3. Third-party services (Apple)</h2>
+<p>The App uses Apple services (MusicKit, ShazamKit, StoreKit, and speech recognition). Information that Apple receives through them is handled under Apple's Privacy Policy (<a href="https://www.apple.com/legal/privacy/en-ww/">https://www.apple.com/legal/privacy/en-ww/</a>).</p>
+
+<h2>4. Your controls</h2>
+<ul>
+  <li>You can change microphone, speech recognition, and Apple Music access at any time in the iOS Settings app. If you do not allow them, the related features such as "Listen" are unavailable, but other features remain usable.</li>
+  <li>Deleting the App removes all information stored on your device (settings, favorites, the anonymous ID, and so on).</li>
+</ul>
+
+<h2>5. Disclosure to third parties</h2>
+<p>The operator does not provide your information to third parties except as needed for the processing described in sections 1–3 and where required by law. We do not sell information.</p>
+
+<h2>6. Retention and security</h2>
+<p>The operator's servers do not store the contents of lookups, such as song titles, in a form that identifies you. Communication is encrypted with HTTPS. The anonymous ID is processed temporarily to enforce request limits.</p>
+
+<h2>7. Children</h2>
+<p>The App does not knowingly collect personal information from children.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>When we change this policy, we will update this page and, where appropriate, notify you in the App. For material changes, we may ask for your consent again.</p>
+
+<h2>9. Contact</h2>
+<p>Takumi Kimura (individual developer)<br><a href="mailto:takuminkimu@gmail.com">takuminkimu@gmail.com</a></p>
+  </main>
+  <footer class="site"><a href="../">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><br>© 2026 Takumi Kimura</footer>
+</div>
+</body>
+</html>
